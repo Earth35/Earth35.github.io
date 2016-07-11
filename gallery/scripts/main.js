@@ -81,7 +81,7 @@ function setArrowVisibility () {
 function previousImage () {
   $("#big-img").fadeOut(250);
   currentPhoto -= 1;
-  window.setTimeout(swapPhoto, 250);
+  window.setTimeout(swapPhoto, 255);
   setArrowVisibility();
   $("#big-img").fadeIn(250);
 }
@@ -89,7 +89,7 @@ function previousImage () {
 function nextImage () {
   $("#big-img").fadeOut(250);
   currentPhoto += 1;
-  window.setTimeout(swapPhoto, 250);
+  window.setTimeout(swapPhoto, 255);
   setArrowVisibility();
   $("#big-img").fadeIn(250);
 }
