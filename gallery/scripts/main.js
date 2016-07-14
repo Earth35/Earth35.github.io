@@ -79,18 +79,26 @@ function setArrowVisibility () {
 }
 
 function previousImage () {
-  $("#big-img").fadeOut(250);
+  fadePhotoOut();
   currentPhoto -= 1;
   window.setTimeout(swapPhoto, 245);
   setArrowVisibility();
-  $("#big-img").fadeIn(250);
+  window.setTimeout(fadePhotoIn, 400);
 }
 
 function nextImage () {
-  $("#big-img").fadeOut(250);
+  fadePhotoOut();
   currentPhoto += 1;
   window.setTimeout(swapPhoto, 245);
   setArrowVisibility();
+  window.setTimeout(fadePhotoIn, 400);
+}
+
+function fadePhotoOut () {
+  $("#big-img").fadeOut(250);
+}
+
+function fadePhotoIn () {
   $("#big-img").fadeIn(250);
 }
 
