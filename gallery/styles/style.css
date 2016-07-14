@@ -18,14 +18,18 @@ body {
   background: url("../assets/img/gallery_bg.jpg"); }
 
 .tooltip {
+  display: inline-block;
   position: absolute;
-  top: 5px;
-  left: 50%;
-  padding: 10px;
-  margin-left: -380px;
+  top: 1vh;
+  width: 50vw;
+  height: 5vh;
+  left: 25vw;
+  padding: 1vh;
   border-radius: 10px;
   font-family: 'Lato', sans-serif;
-  font-size: 1em;
+  font-size: 2vh;
+  text-align: center;
+  line-height: 5vh;
   color: #ccc;
   background: rgba(0, 0, 0, 0.8); }
   .tooltip .close {
@@ -92,9 +96,9 @@ body {
   position: fixed;
   display: none;
   top: 0;
-  left: 50%;
-  margin-left: -515px;
-  padding: 30px 100px 15px 100px;
+  left: 10vw;
+  width: 80vw;
+  height: 100vh;
   z-index: 1;
   box-sizing: border-box;
   border-radius: 10px;
@@ -103,17 +107,19 @@ body {
     display: block;
     position: relative;
     margin: auto;
+    top: 5vh;
+    width: 70%;
     box-sizing: border-box; }
   .overlay #cross {
     cursor: pointer;
     position: absolute;
-    top: -25px;
-    right: -25px;
+    top: -5vh;
+    right: -2vw;
     color: rgba(255, 255, 255, 0.35);
-    width: 125px;
-    height: 125px;
-    line-height: 150px;
-    font-size: 150px;
+    width: 30vh;
+    height: 30vh;
+    line-height: 30vh;
+    font-size: 30vh;
     text-align: center;
     z-index: 2;
     transition: color 0.5s;
@@ -124,8 +130,8 @@ body {
   .overlay .nav-arrow {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    font-size: 150px;
+    top: 35vh;
+    font-size: 30vh;
     text-align: center;
     z-index: 2;
     color: rgba(255, 255, 255, 0.35);
